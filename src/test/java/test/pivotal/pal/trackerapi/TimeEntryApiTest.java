@@ -67,7 +67,6 @@ public class TimeEntryApiTest {
     public void testRead() {
         Long id = createTimeEntry();
 
-
         ResponseEntity<String> readResponse = this.restTemplate.getForEntity("/time-entries/" + id, String.class);
 
 
